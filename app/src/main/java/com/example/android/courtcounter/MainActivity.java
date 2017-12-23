@@ -14,24 +14,45 @@ public class MainActivity extends AppCompatActivity {
     }
 
     int scoreTeamA = 0;
+    int scoreTeamB = 0;
 
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void addThree(View view) {
+    public void addThreeToA(View view) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
-    public void addTwo(View view) {
+    public void addTwoToA(View view) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
 
-    public void addOne(View view) {
+    public void addOneToA(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+    }
+
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void addThreeToB(View view) {
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void addTwoToB(View view) {
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void addOneToB(View view) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
     }
 }

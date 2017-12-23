@@ -32,21 +32,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="addThree"
+            android:onClick="addThreeToA"
             android:text="+3 Points"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="addTwo"
+            android:onClick="addTwoToA"
             android:text="+2 Points"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="addOne"
+            android:onClick="addOneToA"
             android:text="Free Throw"/>
     </LinearLayout>
 
@@ -64,6 +64,7 @@
             android:text="Team B"/>
 
         <TextView
+            android:id="@+id/team_b_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -74,18 +75,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:onClick="addThreeToB"
             android:text="+3 Points"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:onClick="addTwoToB"
             android:text="+2 Points"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:onClick="addOneToB"
             android:text="Free Throw"/>
     </LinearLayout>
 </LinearLayout>
