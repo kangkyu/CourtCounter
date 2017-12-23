@@ -13,20 +13,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    int scoreTeamA = 0;
+
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void showThree(View view) {
-        displayForTeamA(3);
+    public void addThree(View view) {
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void showTwo(View view) {
-        displayForTeamA(2);
+    public void addTwo(View view) {
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void showOne(View view) {
-        displayForTeamA(1);
+    public void addOne(View view) {
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 }
